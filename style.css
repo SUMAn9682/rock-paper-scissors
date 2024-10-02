@@ -1,0 +1,105 @@
+*{
+    margin :0;
+    padding : 0;
+    text-align: center;
+}
+p{
+    color:red;
+}
+#user-score,#comp-score{
+    color:chartreuse;
+    transition: transform 0.3s ease;
+}
+ body{
+    background-image : url("https://img.freepik.com/free-vector/black-red-futuristic-gaming-background_331749-871.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+h1{
+    background-color: coral;
+    color:aqua;
+    height:3rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    animation :glow 2s infinite alternative
+}
+.choice{
+    height : 310px;
+    width: 310px;
+    border-radius:  50%;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    transition : transform 0.3s ease ,background-color o.3s ease;
+}
+
+.choice:hover{
+    cursor:  pointer;
+    background-color: black;
+    transform : scale(1.10);
+    box-shadow: 0px 0px  60px rgba(205, 199, 210, 0.8);
+}
+img{
+    height :300px;
+    width : 300px;
+    /* object-fit:cover; */
+    border-radius:50%;
+    object-fit: cover;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 5rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+.Score-Board{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 4rem;
+    margin-top: 1rem;
+    gap :  10rem;
+}
+.msg-container{
+    margin-top:5rem;
+    display: flex;
+    justify-content: center;
+}
+#msg{
+    height:50px;
+    width:50%;
+    display:flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color:aqua;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .choices {
+        gap: 2rem;
+        flex-direction: column;
+    }
+    .choice {
+        height: 200px;
+        width: 200px;
+    }
+    img {
+        height: 190px;
+        width: 190px;
+    }
+    .Score-Board {
+        font-size: 2.5rem;
+        gap: 5rem;
+    }
+    #msg {
+        width: 80%;
+        font-size: 24px;
+    }
+}
